@@ -6,9 +6,13 @@ ingredients = [
     ["mayo", "mustard", "tabasco"]
 ]
 
-def sandwich_request(ingredients, order) 
-  # your code here!
+def sandwich_request (ingredient)
+  if ingredients.include? (ingredient)
+return true
+
 end
+
+sandwich_request ("ham")
 
 # example city_info hash
 cities = {
@@ -33,7 +37,5 @@ cities = {
     :website => "http://www.cityofchicago.org/"
   }
 }
-
-def city_populations(cities)
-  # your code here!
 end
+
